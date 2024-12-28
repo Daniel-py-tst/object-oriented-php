@@ -2,7 +2,9 @@
 
 require __DIR__ . '/../vendor/autoload.php'; 
 
-$collectionAgency = new \App\CollectionAgency();
-$service = new \App\DebtCollectionService();
+$invoice = new App\Invoice();
 
-echo $service->collectDebt($collectionAgency);
+$invoice->amount = 15;
+
+
+echo $invoice->amount . PHP_EOL;
